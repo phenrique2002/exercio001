@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container" style="margin-top: 3%;">
+    <div class="panel-heading" style="border-top: 0.5px solid #dbd9d9;">
+      <div class="row" style="text-align: center">
+        <h3>Esta é uma Tela de Cadastro</h3>
+      </div>
+    </div>
+    <div class="panel-body" style="border-top:0.5px solid #dbd9d9;">
+      <div class="form-groups">
+        <div class="row">
+          <div class="col-sm-2">
+            <label for="usr">ID</label>
+            <input type="text" class="form-control" disabled id="txtId" placeholder="o ID é automático"
+              style="background-color: #f2f2f2;">
+          </div>
+          <div class="col-sm-10">
+            <label for="usr">Nome</label>
+            <input type="text" class="form-control" disabled id="txtNome" placeholder="Digite um nome"
+              style="background-color: #f2f2f2;">
+          </div>
+        </div>
+        <div class="row" style="margin-top: 1%;">
+          <div class="col-sm-6">
+            <label for="usr">Endereço</label>
+            <input type="text" class="form-control" disabled id="txtEndereco" placeholder="Digite o endereço"
+              style="background-color: #f2f2f2;">
+          </div>
+          <div class="col-sm-6">
+            <label for="usr">Cidade</label>
+            <input type="text" class="form-control" disabled id="txtCidade" placeholder="Digite a cidade"
+              style="background-color: #f2f2f2;">
+          </div>
+        </div>
+        <div class="row" style="margin-top: 1%;">
+          <div class="col-sm-6">
+            <label for="usr">Bairro</label>
+            <input type="text" class="form-control" disabled id="txtBairro" placeholder="Digite o bairro"
+              style="background-color: #f2f2f2;">
+          </div>
+          <div class="col-sm-3">
+            <label for="usr">Cep</label>
+            <input type="text" class="form-control" disabled id="txtCep" placeholder="00000-000"
+              style="background-color: #f2f2f2;">
+          </div>
+          <div class="col-sm-3">
+            <label for="usr">Telefone</label>
+            <input type="text" class="form-control" disabled id="txtTelefone" placeholder="(xx)xxxxx-xxxx)"
+              style="background-color: #f2f2f2;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer" style="background-color:#ced7f2; margin-top: 1%; border-radius: 4px;">
+      <div class="row">
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary pequeno" (click)="habilita()">Novo</button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary pequeno" (click)="habilita()">Alterar</button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary pequeno">Excluir</button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary pequeno">Procurar</button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary pequeno" style="display: none"
+            (click)="limparCampos()">Gravar</button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary pequeno" style="display: none"
+            (click)="limparCampos()">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
